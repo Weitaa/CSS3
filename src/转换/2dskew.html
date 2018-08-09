@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扭曲</title>
+  <style type="text/css">
+    div{
+      width:1500px;
+      height: 250px;
+      background: #abcdef;
+      margin: auto;
+    }
+    div>img{
+      transform: skewX(15deg);/*正值Y逆时针 负值顺时针*/
+      /*transform: skewY(15deg);  正值X顺时针 负值逆时针*/
+      /*transform: skew(15deg,15deg);  第二个值不填默认0*/
+    }
+  </style>
+</head>
+<body>
+<div><img src="images/sprite.jpg"/></div>
+</body>
+</html>

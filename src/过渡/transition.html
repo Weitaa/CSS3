@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+  <style type="text/css">
+    body{background: #abcdef}
+    div{
+      width:800px;
+      height: 800px;
+      margin: auto;
+      transform: rotate(0deg);
+      background: url("images/imooc.png") no-repeat center center,url("images/circle_outer.png");
+      transition-property: transform;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      /*transition-timing-function: ease-in/out/ease/linear;*/
+    transition-delay: 1s;
+    }
+    div:hover{
+      cursor: pointer;
+      transform: rotate(180deg);
+      transition-property: transform;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1s;
+      /*复合属性:transition:property duration timing-function delay*/
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
